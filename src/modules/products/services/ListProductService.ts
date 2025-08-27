@@ -3,7 +3,7 @@ import { productsRepositories } from "../database/repositories/ProductsRepositor
 
 export default class ListProductService {
   async execute(): Promise<Product[]>{
-    const Products = await productsRepositories.find();
-    return Products
+    const products = await productsRepositories.find();
+    return products
   }
 }
