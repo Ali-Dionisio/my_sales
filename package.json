@@ -23,6 +23,8 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@types/joi": "^17.2.3",
+    "celebrate": "^15.0.3",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^4.21.2",

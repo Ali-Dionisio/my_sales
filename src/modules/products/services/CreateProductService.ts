@@ -8,9 +8,12 @@ interface ICreateProducts{
   quantity: number
 }
 
+
 export default class CreateProductService{
   async execute({name, price, quantity}: ICreateProducts): Promise<Product> {
+    console.log("ts2", name);
     const productsExists = await productsRepositories.findByName(name);
+    console.log("ts4", name);
 
     if(productsExists){
       throw new AppError('There is already one product with this name', 409);

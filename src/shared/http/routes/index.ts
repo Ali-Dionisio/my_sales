@@ -8,5 +8,4 @@ routes.get('/health', (request, response) => {
 });
 
 routes.use('/products', productsRouter)
-
 export default routes;
