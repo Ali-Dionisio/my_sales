@@ -12,6 +12,11 @@ AppDataSource.initialize()
   .then(async() => {
     const app = express();
 
+    // ROTA DE TESTE: Adicione esta linha
+    app.get('/', (req, res) => {
+      return res.status(200).json({ message: 'API is running' });
+    });
+
     app.use(cors());
     app.use(express.json());
 
